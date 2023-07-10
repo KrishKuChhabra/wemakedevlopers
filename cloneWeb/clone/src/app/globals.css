@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+.font-rowdies {
+  font-family: 'Rowdies', sans-serif;
+}
+
+.line {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.layout{
+  margin-left: auto;
+  margin-right: auto;
+  max-width:88rem;
+  width: 91.666667%;
+}
+.h1{
+  font-size: 3rem;
+  line-height: 1;
+}
+.styled-hr{
+  --tw-bg-opacity: 1;
+  background-color: rgb(89,66,233,var(--tw-bg-opacity));
+  background-color: rgb(var(--primary),var(--tw-bg-opacity));
+  border-radius: 9999px;
+  border-style: none;
+  height: 0.5rem;
+  width: 8rem;
+}
+.to-base-100\/50 {
+  --tw-gradient-to: rgb(var(--base-100),0.5);
+}
+.from-transparent {
+  --tw-gradient-from: transparent;
+  --tw-gradient-to: transparent;
+  --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+}
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right,var(--tw-gradient-stops));
+}
+.bg-base-100\/10 {
+  background-color: hsla(0,0%,8%,.1);
+  background-color: rgb(var(--base-100),.1);
+}
